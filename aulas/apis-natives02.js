@@ -3,8 +3,11 @@ const {EventEmitter} = require('events')
 /**criando um evento */
 const evento = new EventEmitter()
 
+
+
 /**OUVINDO UM EVENTO */
 evento.on('teste', (user, msg) =>{
+
     console.log(`Usuario: ${user} possui uma MGS: ${msg}`)
 })
 

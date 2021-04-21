@@ -7,7 +7,7 @@ var p111 = {
       state: 'PE',
       postalCode: '52050-500'
     }
-  }
+}
 
 
 var p111Mapeada = {

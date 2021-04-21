@@ -24,4 +24,3 @@ function valorSalario(salario){
     }
 
     main()
-

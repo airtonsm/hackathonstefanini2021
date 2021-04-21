@@ -5,7 +5,6 @@ const evento = new EventEmitter()
 var alunos = [{nomeAluno : "", dataNascimento : ""}]
 
 evento.on('eventos', (nome, data) =>{
-    [{nomeAluno : nome, dataNascimento : data}]
     alunos.sort
     console.table(alunos)
 })

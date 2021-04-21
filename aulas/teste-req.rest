@@ -1,0 +1,4 @@
+### requisicao GET /
+GET http://localhost:3000
+### requesicao get com parametro
+GET http://localhost:3000/hackathon/7851

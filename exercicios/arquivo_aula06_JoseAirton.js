@@ -2,16 +2,15 @@ const {EventEmitter} = require('events')
 
 const evento = new EventEmitter()
 
-const alunos = [{nome : 'Airton', 
-                dataNascimento : '18/05/1993'}]
+var alunos = [{nomeAluno : "", dataNascimento : ""}]
 
-
-evento.on('eventos', (nome, dataNascimento) =>{
-
-    alunos.push({Nome: nome,datadeNascimento : dataNascimento})
-
+evento.on('eventos', (nome, data) =>{
+    [{nomeAluno : nome, dataNascimento : data}]
+    alunos.sort
     console.table(alunos)
 })
 
-evento.emit('eventos', 'Airton', '18/09/2001')
-evento.emit('eventos', 'Vitor', '18/09/1993')
+evento.emit('eventos', 'airton', '18/05/1963')
+evento.emit('eventos', 'Jorge', '18/05/1985')
+evento.emit('eventos', 'Filipe', '18/05/1988')
+

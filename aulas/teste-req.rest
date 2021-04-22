@@ -2,3 +2,17 @@
 GET http://localhost:3000
 ### requesicao get com parametro
 GET http://localhost:3000/hackathon/7851
+###requisicao POST
+POST http://localhost:3000/hackathon/
+Content-Type: application/json
+
+{
+    "nome" : "José Airton",
+    "telefone" : "(61) 9557-8009"
+}
+###requisicao PUT
+PUT http://localhost:3000/hackathon/1234
+### requisicao PATCH
+PATCH http://localhost:3000/hackathon/7851
+###requisicao DELETE
+DELETE http://localhost:3000/hackathon/7851
